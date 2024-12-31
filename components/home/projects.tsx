@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useContext } from 'react';
+// import { useContext } from 'react';
 import TextCards from 'shared/components/text-cards';
 import { Button, HeaderSmall, ProjectCard } from '@shared-components';
-import { ProjectDetailsContext } from 'shared/utils/contexts';
+// import { ProjectDetailsContext } from 'shared/utils/contexts';
 import { Project } from 'shared/utils/types';
 
 export default function Projects(): JSX.Element {
@@ -15,7 +15,7 @@ export default function Projects(): JSX.Element {
       tagline: 'Revolutionizing Web Development',
       description:
         'A cutting-edge web application for modern businesses, designed to streamline workflows and enhance productivity.',
-      img: 'https://via.placeholder.com/300?text=Project+1+Image',
+      img: '/images/projects/teasergo.jpg',
       name: 'WebApp 360',
       tags: ['React', 'Node.js', 'JavaScript'],
       github: 'https://github.com/username/webapp-360',
@@ -23,49 +23,49 @@ export default function Projects(): JSX.Element {
       featured: true,
       launch_video: 'https://www.youtube.com/watch?v=example1',
       url: 'https://www.webapp360.com'
-    },
-    {
-      slug: 'project-2',
-      tagline: 'Innovative UI/UX Designs',
-      description:
-        'A design-centric project aimed at creating user-friendly interfaces that provide seamless experiences across devices.',
-      img: 'https://via.placeholder.com/300?text=Project+2+Image',
-      name: 'Design Studio',
-      tags: ['Figma', 'UI/UX', 'Design'],
-      github: 'https://github.com/username/design-studio',
-      category: ['Design', 'UI/UX'],
-      featured: false,
-      launch_video: 'https://www.youtube.com/watch?v=example2',
-      url: 'https://www.designstudio.com'
-    },
-    {
-      slug: 'project-3',
-      tagline: 'Advanced E-Commerce Platform',
-      description:
-        'An e-commerce platform with advanced features, including product recommendations, secure payments, and analytics.',
-      img: 'https://via.placeholder.com/300?text=Project+3+Image',
-      name: 'ShopEase',
-      tags: ['E-Commerce', 'Shopify', 'Payment Gateway'],
-      github: 'https://github.com/username/shopease',
-      category: ['E-Commerce', 'Web'],
-      featured: true,
-      launch_video: 'https://www.youtube.com/watch?v=example3',
-      url: 'https://www.shopease.com'
-    },
-    {
-      slug: 'project-4',
-      tagline: 'Real-time Data Analytics',
-      description:
-        'A data analytics platform for visualizing and analyzing large datasets in real-time, perfect for businesses and researchers.',
-      img: 'https://via.placeholder.com/300?text=Project+4+Image',
-      name: 'DataStream',
-      tags: ['Data Analytics', 'Real-time', 'Visualization'],
-      github: 'https://github.com/username/datastream',
-      category: ['Data Science', 'Analytics'],
-      featured: false,
-      launch_video: 'https://www.youtube.com/watch?v=example4',
-      url: 'https://www.datastream.com'
     }
+    // {
+    //   slug: 'project-2',
+    //   tagline: 'Innovative UI/UX Designs',
+    //   description:
+    //     'A design-centric project aimed at creating user-friendly interfaces that provide seamless experiences across devices.',
+    //   img: 'https://via.placeholder.com/300?text=Project+2+Image',
+    //   name: 'Design Studio',
+    //   tags: ['Figma', 'UI/UX', 'Design'],
+    //   github: 'https://github.com/username/design-studio',
+    //   category: ['Design', 'UI/UX'],
+    //   featured: false,
+    //   launch_video: 'https://www.youtube.com/watch?v=example2',
+    //   url: 'https://www.designstudio.com'
+    // },
+    // {
+    //   slug: 'project-3',
+    //   tagline: 'Advanced E-Commerce Platform',
+    //   description:
+    //     'An e-commerce platform with advanced features, including product recommendations, secure payments, and analytics.',
+    //   img: 'https://via.placeholder.com/300?text=Project+3+Image',
+    //   name: 'ShopEase',
+    //   tags: ['E-Commerce', 'Shopify', 'Payment Gateway'],
+    //   github: 'https://github.com/username/shopease',
+    //   category: ['E-Commerce', 'Web'],
+    //   featured: true,
+    //   launch_video: 'https://www.youtube.com/watch?v=example3',
+    //   url: 'https://www.shopease.com'
+    // },
+    // {
+    //   slug: 'project-4',
+    //   tagline: 'Real-time Data Analytics',
+    //   description:
+    //     'A data analytics platform for visualizing and analyzing large datasets in real-time, perfect for businesses and researchers.',
+    //   img: 'https://via.placeholder.com/300?text=Project+4+Image',
+    //   name: 'DataStream',
+    //   tags: ['Data Analytics', 'Real-time', 'Visualization'],
+    //   github: 'https://github.com/username/datastream',
+    //   category: ['Data Science', 'Analytics'],
+    //   featured: false,
+    //   launch_video: 'https://www.youtube.com/watch?v=example4',
+    //   url: 'https://www.datastream.com'
+    // }
   ];
 
   return (

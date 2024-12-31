@@ -1,9 +1,9 @@
 import { Button, HeaderSmall } from '@shared-components';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { useContext } from 'react';
-import { PersonalDetailsContext } from 'shared/utils/contexts';
-import { PersonalDetails } from 'shared/utils/types';
+// import { useContext } from 'react';
+// import { PersonalDetailsContext } from 'shared/utils/contexts';
+// import { PersonalDetails } from 'shared/utils/types';
 
 export default function Landing(): JSX.Element {
   const config = {
@@ -11,7 +11,7 @@ export default function Landing(): JSX.Element {
     damping: 10,
     stiffness: 80
   };
-  const personalDetails: PersonalDetails = useContext(PersonalDetailsContext);
+  // const personalDetails: PersonalDetails = useContext(PersonalDetailsContext);
   const router = useRouter();
   return (
     <>
@@ -41,10 +41,12 @@ export default function Landing(): JSX.Element {
               />
               <HeaderSmall text="Who is he?" />
               <h1 className="text-3xl sm:text-2xl xl:text-1xl font-extrabold text-white leading-none mb-3">
-                {personalDetails.name}
+                Rico Kurnia
               </h1>
               <h5 className="text-7xl font-light text-violet text-justify">
-                {personalDetails.about}
+                A creative web developer with a knack for building modern, user-friendly websites
+                and applications. Blending technical expertise with an eye for design, I bring ideas
+                to life through innovative and efficient digital solutions.
               </h5>
               <div className="grid sm:grid-cols-2 md:grid-cols-none xl:grid-cols-2 gap-4 mt-6">
                 <div className="sm:col-span-1 xl:col-span-1">
@@ -59,7 +61,7 @@ export default function Landing(): JSX.Element {
                     type="outlined"
                     text="Download Resume"
                     // eslint-disable-next-line no-return-assign
-                    onClickHandler={() => window.open(personalDetails.resume, '_blank')}
+                    onClickHandler={() => window.open('#', '_blank')}
                   />
                 </div>
               </div>
@@ -67,9 +69,9 @@ export default function Landing(): JSX.Element {
           </div>
           <div className="hidden md:flex md:col-span-5 lg:col-span-6 text-justify text-white justify-end items-end ">
             <img
-              src={personalDetails.profile_img}
+              src="/images/me.jpg"
               alt="Harsh Goel"
-              className="ml-auto w-100 lg:w-4/5 pointer-events-none text-right"
+              className="w-100 lg:w-3/4 pointer-events-none  rounded-3xl"
             />
           </div>
         </div>

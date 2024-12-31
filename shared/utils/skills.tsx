@@ -14,33 +14,39 @@ const SKILLS: Skill[] = [
     src: '/images/skills/react.svg'
   },
   {
+    name: 'NextJs',
+    src: '/images/skills/nextjs.svg'
+  },
+  {
+    name: 'Expressjs',
+    src: '/images/skills/express.svg'
+  },
+  {
+    name: 'NestJs',
+    src: '/images/skills/nestjs.svg'
+  },
+  {
     name: 'Javascript',
     src: '/images/skills/js.svg'
   },
   {
-    name: 'AngularJS',
+    name: 'Typescript',
     src: '/images/skills/ts.svg'
   },
   {
-    name: 'React Native',
-    src: '/images/skills/react-native.svg'
+    name: 'Python',
+    src: '/images/skills/python.svg'
   },
   {
-    name: 'ExpressJS',
-    src: '/images/skills/angular.svg'
+    name: 'Postgre',
+    src: '/images/skills/postgre.png'
   },
-  {
-    name: 'MongoDB',
-    src: '/images/skills/express.svg'
-  },
+
   {
     name: 'Figma',
     src: '/images/skills/figma.svg'
   },
-  {
-    name: 'NextJs',
-    src: '/images/skills/nextjs.svg'
-  },
+
   {
     name: 'Git',
     src: '/images/skills/git.svg'
