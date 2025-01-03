@@ -2,37 +2,37 @@ import { HeaderSmall } from '@shared-components';
 import Link from 'next/link';
 // import { useContext } from 'react';
 // import { PersonalDetailsContext } from 'shared/utils/contexts';
-import { PersonalDetails } from 'shared/utils/types';
+// import { PersonalDetails } from 'shared/utils/types';
 
 export default function Work(): JSX.Element {
   // const personalDetails: PersonalDetails = useContext(PersonalDetailsContext);
-  const personalDetails: PersonalDetails = {
-    name: 'John Doe',
-    logo: 'https://via.placeholder.com/150?text=Company+Logo',
-    about:
-      'A passionate web developer with 5+ years of experience in building modern web applications.',
-    socialMedia: [
-      {
-        link: 'https://twitter.com/johndoe',
-        image_file: 'https://via.placeholder.com/24?text=Twitter',
-        alt_text: 'Twitter'
-      },
-      {
-        link: 'https://linkedin.com/in/johndoe',
-        image_file: 'https://via.placeholder.com/24?text=LinkedIn',
-        alt_text: 'LinkedIn'
-      }
-    ],
-    work: {
-      company: 'Tech Solutions Inc.',
+  // const personalDetails: PersonalDetails = {
+  //   name: 'John Doe',
+  //   logo: 'https://via.placeholder.com/150?text=Company+Logo',
+  //   about:
+  //     'A passionate web developer with 5+ years of experience in building modern web applications.',
+  //   socialMedia: [
+  //     {
+  //       link: 'https://twitter.com/johndoe',
+  //       image_file: 'https://via.placeholder.com/24?text=Twitter',
+  //       alt_text: 'Twitter'
+  //     },
+  //     {
+  //       link: 'https://linkedin.com/in/johndoe',
+  //       image_file: 'https://via.placeholder.com/24?text=LinkedIn',
+  //       alt_text: 'LinkedIn'
+  //     }
+  //   ],
+  //   work: {
+  //     company: 'Tech Solutions Inc.',
 
-      logo: 'https://via.placeholder.com/150?text=Tech+Solutions+Inc.',
-      designation: 'Senior Web Developer'
-    },
-    resume: 'https://example.com/johndoe-resume.pdf',
-    profile_img: 'https://via.placeholder.com/150?text=Profile+Image',
-    calendyUrl: 'https://calendly.com/johndoe'
-  };
+  //     logo: 'https://via.placeholder.com/150?text=Tech+Solutions+Inc.',
+  //     designation: 'Senior Web Developer'
+  //   },
+  //   resume: 'https://example.com/johndoe-resume.pdf',
+  //   profile_img: 'https://via.placeholder.com/150?text=Profile+Image',
+  //   calendyUrl: 'https://calendly.com/johndoe'
+  // };
   return (
     <>
       <div className="relative h-auto py-10 lg:py-20">
@@ -70,12 +70,8 @@ export default function Work(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="col-span-12 md:col-span-5 lg:col-span-6 flex flex-col items-center justify-center">
-            <img
-              src={personalDetails.work.logo}
-              alt="Works at"
-              className="w-48 lg:w-full p-10 sm:p-24 md:p-4 lg:p-24"
-            />
+          <div className="col-span-12  md:col-span-5 lg:col-span-6 flex flex-col items-center justify-center">
+            <img src="images/me2.jpg" alt="Works at" className="w-48 lg:w-2/4 rounded-3xl" />
           </div>
         </div>
       </div>

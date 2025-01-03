@@ -1,7 +1,8 @@
-import { useContext } from 'react';
-import { PersonalDetailsContext } from '@utils/contexts';
-import { PersonalDetails } from '@utils/types';
 import { SocialMedia } from '@utils/types';
+// import { useContext } from 'react';
+// import { PersonalDetailsContext } from '@utils/contexts';
+// import { PersonalDetails } from '@utils/types';
+
 interface Props {
   link: string;
   alt_text: string;
@@ -24,25 +25,27 @@ export default function SocialBar(): JSX.Element {
   // const { socialMedia }: PersonalDetails = useContext(PersonalDetailsContext);
   const socialMedia: SocialMedia[] = [
     {
-      link: '#',
-      image_file: 'https://via.placeholder.com/24?text=Twitter',
-      alt_text: 'Twitter'
+      link: 'ricokurnia19@gmail.com',
+      image_file: 'https://w7.pngwing.com/pngs/608/931/png-transparent-gmail-new-logo-icon.png',
+      alt_text: 'Gmail'
     },
     {
-      link: '#',
-      image_file: 'https://via.placeholder.com/24?text=LinkedIn',
+      link: 'https://www.linkedin.com/in/rico-kurnia-289b07294/',
+      image_file:
+        'https://w7.pngwing.com/pngs/60/378/png-transparent-social-media-linkedin-computer-icons-logo-facebook-shelf-drum-blue-text-rectangle-thumbnail.png',
       alt_text: 'LinkedIn'
     },
     {
-      link: '#',
-      image_file: 'https://via.placeholder.com/24?text=GitHub',
+      link: 'https://github.com/ricokurnia12',
+      image_file:
+        'https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png',
       alt_text: 'GitHub'
-    },
-    {
-      link: '#',
-      image_file: 'https://via.placeholder.com/24?text=Instagram',
-      alt_text: 'Instagram'
     }
+    // {
+    //   link: '#',
+    //   image_file: 'https://via.placeholder.com/24?text=Instagram',
+    //   alt_text: 'Instagram'
+    // }
   ];
 
   return (

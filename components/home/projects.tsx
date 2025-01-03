@@ -23,49 +23,49 @@ export default function Projects(): JSX.Element {
       featured: true,
       launch_video: 'https://www.youtube.com/watch?v=example1',
       url: 'https://www.webapp360.com'
+    },
+    {
+      slug: 'project-2',
+      tagline: 'Innovative UI/UX Designs',
+      description:
+        'A design-centric project aimed at creating user-friendly interfaces that provide seamless experiences across devices.',
+      img: '/images/projects/webgo.jpg',
+      name: 'Design Studio',
+      tags: ['Figma', 'UI/UX', 'Design'],
+      github: 'https://github.com/username/design-studio',
+      category: ['Design', 'UI/UX'],
+      featured: false,
+      launch_video: 'https://www.youtube.com/watch?v=example2',
+      url: 'https://www.designstudio.com'
+    },
+    {
+      slug: 'project-3',
+      tagline: 'Advanced E-Commerce Platform',
+      description:
+        'An e-commerce platform with advanced features, including product recommendations, secure payments, and analytics.',
+      img: '/images/projects/goholiday.jpg',
+      name: 'ShopEase',
+      tags: ['E-Commerce', 'Shopify', 'Payment Gateway'],
+      github: 'https://github.com/username/shopease',
+      category: ['E-Commerce', 'Web'],
+      featured: true,
+      launch_video: 'https://www.youtube.com/watch?v=example3',
+      url: 'https://www.shopease.com'
+    },
+    {
+      slug: 'project-4',
+      tagline: 'Real-time Data Analytics',
+      description:
+        'A data analytics platform for visualizing and analyzing large datasets in real-time, perfect for businesses and researchers.',
+      img: '/images/projects/admingo.jpg',
+      name: 'DataStream',
+      tags: ['Data Analytics', 'Real-time', 'Visualization'],
+      github: 'https://github.com/username/datastream',
+      category: ['Data Science', 'Analytics'],
+      featured: false,
+      launch_video: 'https://www.youtube.com/watch?v=example4',
+      url: 'https://www.datastream.com'
     }
-    // {
-    //   slug: 'project-2',
-    //   tagline: 'Innovative UI/UX Designs',
-    //   description:
-    //     'A design-centric project aimed at creating user-friendly interfaces that provide seamless experiences across devices.',
-    //   img: 'https://via.placeholder.com/300?text=Project+2+Image',
-    //   name: 'Design Studio',
-    //   tags: ['Figma', 'UI/UX', 'Design'],
-    //   github: 'https://github.com/username/design-studio',
-    //   category: ['Design', 'UI/UX'],
-    //   featured: false,
-    //   launch_video: 'https://www.youtube.com/watch?v=example2',
-    //   url: 'https://www.designstudio.com'
-    // },
-    // {
-    //   slug: 'project-3',
-    //   tagline: 'Advanced E-Commerce Platform',
-    //   description:
-    //     'An e-commerce platform with advanced features, including product recommendations, secure payments, and analytics.',
-    //   img: 'https://via.placeholder.com/300?text=Project+3+Image',
-    //   name: 'ShopEase',
-    //   tags: ['E-Commerce', 'Shopify', 'Payment Gateway'],
-    //   github: 'https://github.com/username/shopease',
-    //   category: ['E-Commerce', 'Web'],
-    //   featured: true,
-    //   launch_video: 'https://www.youtube.com/watch?v=example3',
-    //   url: 'https://www.shopease.com'
-    // },
-    // {
-    //   slug: 'project-4',
-    //   tagline: 'Real-time Data Analytics',
-    //   description:
-    //     'A data analytics platform for visualizing and analyzing large datasets in real-time, perfect for businesses and researchers.',
-    //   img: 'https://via.placeholder.com/300?text=Project+4+Image',
-    //   name: 'DataStream',
-    //   tags: ['Data Analytics', 'Real-time', 'Visualization'],
-    //   github: 'https://github.com/username/datastream',
-    //   category: ['Data Science', 'Analytics'],
-    //   featured: false,
-    //   launch_video: 'https://www.youtube.com/watch?v=example4',
-    //   url: 'https://www.datastream.com'
-    // }
   ];
 
   return (
@@ -139,7 +139,7 @@ export default function Projects(): JSX.Element {
               <ProjectCard
                 project={project}
                 key={project.slug}
-                filter={{ key: 'featured', value: true }}
+                filter={{ key: 'featured', value: 'all' }}
               />
             ))}
           </div>
