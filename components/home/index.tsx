@@ -3,6 +3,7 @@ import Skills from './skills';
 import Work from './work';
 import Projects from './projects';
 import Contact from './contact';
+import TimelineExperience from 'components/experience';
 // import RepoDetails from './repo';
 // import WordCloud from './wordcloud';
 
@@ -14,6 +15,7 @@ const HomePage = (): JSX.Element => {
           <Landing />
           <Skills />
           <Work />
+          <TimelineExperience />
           {/* <WordCloud /> */}
           <Projects />
           <Contact />

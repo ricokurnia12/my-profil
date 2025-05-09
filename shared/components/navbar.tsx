@@ -1,10 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Menu } from 'react-feather';
 import { navlinks } from '@utils/constants';
-import { PersonalDetails } from '@utils/types';
-import { PersonalDetailsContext } from '@utils/contexts';
 
 type Props = {
   href: string;
@@ -37,7 +35,7 @@ const NavItem = ({ href, title }: Props): JSX.Element => {
 };
 
 const Navbar = (): JSX.Element => {
-  const { logo }: PersonalDetails = useContext(PersonalDetailsContext);
+  // const { logo }: PersonalDetails = useContext(PersonalDetailsContext);
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [isScreenScrolled, setisScreenScrolled] = useState(false);
   const addShadowtoNav = () => {
@@ -61,13 +59,13 @@ const Navbar = (): JSX.Element => {
         <div className="flex justify-between">
           <div>
             <Link href="/">
-              <img
-                src={logo}
+              {/* <img
+                src={`https://google.com`}
                 alt="logo"
                 className={`${
                   isScreenScrolled ? 'w-1/5 md:w-3/12' : 'w-16 md:w-2/5'
                 } pl-30 my-2 transition-all transform hover:scale-75 cursor-pointer`}
-              />
+              /> */}
             </Link>
           </div>
           <div className="flex md:hidden">
