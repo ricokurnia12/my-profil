@@ -7,6 +7,28 @@ const projectData = [
       server: ['Nginx'],
       database: ['PostgreSql']
     },
+    image: [
+      {
+        path: '/project/go-career/go-career.png',
+        description: 'GO Career landing page'
+      },
+      {
+        path: '/project/go-career/list-job.png',
+        description: 'Available job listings page'
+      },
+      {
+        path: '/project/go-career/progress-admin.png',
+        description: 'Applicant details and interview schedule'
+      },
+      {
+        path: '/project/go-career/log-activity.png',
+        description: 'Admin activity log page'
+      },
+      {
+        path: '/project/go-career/add-loker.png',
+        description: 'Job posting CMS form'
+      }
+    ],
     description: (
       <>
         <p>
@@ -35,6 +57,24 @@ const projectData = [
       server: ['Nginx'],
       database: ['mySql']
     },
+    image: [
+      {
+        path: '/project/teaser-go/landing.png',
+        description: 'Landing page for user introduction and registration'
+      },
+      {
+        path: '/project/teaser-go/exam.png',
+        description: 'Exam interface showing multiple choice questions'
+      },
+      {
+        path: '/project/teaser-go/explain.png',
+        description: 'Explanation page displaying correct answers with reasoning'
+      },
+      {
+        path: '/project/teaser-go/result.png',
+        description: 'Result page summarizing user performance and scores'
+      }
+    ],
     description: (
       <>
         <p>
@@ -57,10 +97,40 @@ const projectData = [
     name: 'Official Web Ganesha Operation',
     tech: {
       frontend: ['NextJs', 'TailwindCss'],
-      backend: ['NodeJs', 'Strapi CMS'],
+      backend: ['NodeJs', 'ExpressJs'],
       server: ['Nginx'],
-      database: ['PostgreSql']
+      database: ['MongoDb']
     },
+    image: [
+      {
+        path: '/project/go/landing.png',
+        description: 'Landing page for user introduction and registration'
+      },
+      {
+        path: '/project/go/list-produk.png',
+        description: 'Exam interface showing multiple choice questions'
+      },
+      {
+        path: '/project/go/register.png',
+        description: 'Explanation page displaying correct answers with reasoning'
+      },
+      {
+        path: '/project/go/payment.png',
+        description: 'Result page summarizing user performance and scores'
+      },
+      {
+        path: '/project/go/dashboard.png',
+        description: 'Result page summarizing user performance and scores'
+      },
+      {
+        path: '/project/go/addproduct.png',
+        description: 'Result page summarizing user performance and scores'
+      },
+      {
+        path: '/project/go/user-manajemen.png',
+        description: 'Result page summarizing user performance and scores'
+      }
+    ],
     description: (
       <>
         <p>
@@ -69,12 +139,11 @@ const projectData = [
           product offerings, educational articles, news updates, and more.
         </p>
         <p>
-          The site supports product sales, blog publishing, and dynamic content management through a
-          powerful CMS (Strapi), enabling the internal team to manage content without developer
-          assistance.
+          The site supports product sales, blog publishing, and dynamic content management, enabling
+          the internal team to manage content without developer assistance.
         </p>
         <p>
-          Built with NextJs and TailwindCSS for the frontend, and powered by NodeJs and Strapi on
+          Built with NextJs and TailwindCSS for the frontend, and powered by NodeJs and ExpressJs on
           the backend, this platform ensures scalability, flexibility, and ease of maintenance.
         </p>
       </>
@@ -82,4 +151,4 @@ const projectData = [
   }
 ];
 
-export default { projectData };
+export default projectData;

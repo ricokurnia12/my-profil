@@ -25,22 +25,16 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
       '%c This place is where I was supposed to post job openings, but currently I need one :P , :)',
       'background: #212121; color: #f69510; padding: 6px; '
     );
-    console.log(`
-    _   _                _        ____            _ 
-                                                                                    
-    _   _                        _     
-    | | | |   __ _   _ __   ___  | |__  
-    | |_| |  / _\` | | '__| / __| | '_ \\ 
-    |  _  | | (_| | | |    \\__ \\ | | | |
-    |_| |_|  \\__,_| |_|    |___/ |_| |_|
-    
-    _   ___         _       ____     ___     ___   _ 
-                                                                                             
-                                                             `);
+    console.log(`  ____  ___ ____ ___  
+ |  _ \|_ _/ ___/ _ \ 
+ | |_) || | |  | | | |
+ |  _ < | | |__| |_| |
+ |_| \_\___\____\___/ 
+                      `);
 
     console.log(
       "%c Let's talk, head to contact page and schedule a call with me!",
-      'background: #212121; color: #f69510; padding: 6px;'
+      'background: #212121; color: #e4e4e471; padding: 6px;'
     );
 
     console.log = () => {};
@@ -102,8 +96,8 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2595CLJE11" />
-        <script
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-2595CLJE11" /> */}
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `       
               window.dataLayer = window.dataLayer || [];
@@ -112,8 +106,8 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
             
               gtag('config', 'G-2595CLJE11');`
           }}
-        />
-        <script
+        /> */}
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `(function(h,o,t,j,a,r){
               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -124,7 +118,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
               a.appendChild(r);
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`
           }}
-        />
+        /> */}
       </Head>
       {loading ? (
         <Loader />
@@ -144,7 +138,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
           <CookieAlert />
         </AnimatePresence>
       )}
-      {disableConsole()}
+      {/* {disableConsole()} */}
     </div>
   );
 }

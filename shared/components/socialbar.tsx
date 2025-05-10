@@ -25,20 +25,19 @@ export default function SocialBar(): JSX.Element {
   // const { socialMedia }: PersonalDetails = useContext(PersonalDetailsContext);
   const socialMedia: SocialMedia[] = [
     {
-      link: 'ricokurnia19@gmail.com',
+      link: 'mailto:ricokurnia19@gmail.com',
       image_file: 'https://w7.pngwing.com/pngs/608/931/png-transparent-gmail-new-logo-icon.png',
       alt_text: 'Gmail'
-    },
-    {
-      link: 'https://www.linkedin.com/in/rico-kurnia-289b07294/',
-      image_file:
-        'https://w7.pngwing.com/pngs/60/378/png-transparent-social-media-linkedin-computer-icons-logo-facebook-shelf-drum-blue-text-rectangle-thumbnail.png',
-      alt_text: 'LinkedIn'
     },
     {
       link: 'https://github.com/ricokurnia12',
       image_file:
         'https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png',
+      alt_text: 'GitHub'
+    },
+    {
+      link: 'https://wa.me/6281284710340',
+      image_file: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg',
       alt_text: 'GitHub'
     }
     // {

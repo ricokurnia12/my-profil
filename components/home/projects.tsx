@@ -1,72 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 // import { useContext } from 'react';
 import TextCards from 'shared/components/text-cards';
-import { Button, HeaderSmall, ProjectCard } from '@shared-components';
+import { HeaderSmall, ProjectCard } from '@shared-components';
 // import { ProjectDetailsContext } from 'shared/utils/contexts';
-import { Project } from 'shared/utils/types';
+import projectData from 'data/project-data';
+import { ProjectData } from 'interface/project-data';
 
 export default function Projects(): JSX.Element {
-  const router = useRouter();
   // const projectDetails: Project[] = useContext(ProjectDetailsContext);
-  const projectDetails: Project[] = [
-    {
-      slug: 'project-1',
-      tagline: 'Revolutionizing Web Development',
-      description:
-        'A cutting-edge web application for modern businesses, designed to streamline workflows and enhance productivity.',
-      img: '/images/projects/teasergo.jpg',
-      name: 'WebApp 360',
-      tags: ['React', 'Node.js', 'JavaScript'],
-      github: 'https://github.com/username/webapp-360',
-      category: ['Web', 'Business'],
-      featured: true,
-      launch_video: 'https://www.youtube.com/watch?v=example1',
-      url: 'https://www.webapp360.com'
-    },
-    {
-      slug: 'project-2',
-      tagline: 'Innovative UI/UX Designs',
-      description:
-        'A design-centric project aimed at creating user-friendly interfaces that provide seamless experiences across devices.',
-      img: '/images/projects/webgo.jpg',
-      name: 'Design Studio',
-      tags: ['Figma', 'UI/UX', 'Design'],
-      github: 'https://github.com/username/design-studio',
-      category: ['Design', 'UI/UX'],
-      featured: false,
-      launch_video: 'https://www.youtube.com/watch?v=example2',
-      url: 'https://www.designstudio.com'
-    },
-    {
-      slug: 'project-3',
-      tagline: 'Advanced E-Commerce Platform',
-      description:
-        'An e-commerce platform with advanced features, including product recommendations, secure payments, and analytics.',
-      img: '/images/projects/goholiday.jpg',
-      name: 'ShopEase',
-      tags: ['E-Commerce', 'Shopify', 'Payment Gateway'],
-      github: 'https://github.com/username/shopease',
-      category: ['E-Commerce', 'Web'],
-      featured: true,
-      launch_video: 'https://www.youtube.com/watch?v=example3',
-      url: 'https://www.shopease.com'
-    },
-    {
-      slug: 'project-4',
-      tagline: 'Real-time Data Analytics',
-      description:
-        'A data analytics platform for visualizing and analyzing large datasets in real-time, perfect for businesses and researchers.',
-      img: '/images/projects/admingo.jpg',
-      name: 'DataStream',
-      tags: ['Data Analytics', 'Real-time', 'Visualization'],
-      github: 'https://github.com/username/datastream',
-      category: ['Data Science', 'Analytics'],
-      featured: false,
-      launch_video: 'https://www.youtube.com/watch?v=example4',
-      url: 'https://www.datastream.com'
-    }
-  ];
 
   return (
     <>
@@ -135,21 +77,17 @@ export default function Projects(): JSX.Element {
         </div>
         <div className="relative h-auto sm:h-auto md:h-auto ml-4 sm:mx-12 md:mx-16" id="projects">
           <div className="grid md:grid-cols-2 gap-4 place-items-center">
-            {projectDetails.map((project: Project) => (
-              <ProjectCard
-                project={project}
-                key={project.slug}
-                filter={{ key: 'featured', value: 'all' }}
-              />
+            {projectData.map((project: ProjectData) => (
+              <ProjectCard project={project} key={project.name} />
             ))}
           </div>
-          <div className="flex justify-center mt-10 lg:mt-4">
+          {/* <div className="flex justify-center mt-10 lg:mt-4">
             <Button
               type="solid"
               text="Show me more! 🔥"
               onClickHandler={() => router.push('/projects')}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

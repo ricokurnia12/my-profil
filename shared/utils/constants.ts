@@ -9,15 +9,11 @@ const navlinks = [
   },
   {
     title: 'Work',
-    href: '/work'
+    href: '/#work'
   },
   {
     title: 'Projects',
-    href: '/projects'
-  },
-  {
-    title: 'Contact',
-    href: '/connect'
+    href: '/#projects'
   }
 ];
 

@@ -1,8 +1,6 @@
 import { Button, HeaderSmall } from '@shared-components';
-import { useRouter } from 'next/router';
 
 export default function Contact(): JSX.Element {
-  const router = useRouter();
   return (
     <>
       <div className="relative h-auto py-10 lg:py-10">
@@ -28,7 +26,7 @@ export default function Contact(): JSX.Element {
           <Button
             type="solid"
             text="Let's Connect! 🚀 "
-            onClickHandler={() => router.push('/connect')}
+            // onClickHandler={() => router.push('/connect')}
           />
         </div>
       </div>

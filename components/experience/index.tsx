@@ -1,6 +1,7 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/button-has-type */
 import { useState } from 'react';
-import { Briefcase, Calendar, ChevronRight, Award, ChevronLeft } from 'lucide-react';
-import { Button } from '@shared-components';
+import { Briefcase, Calendar, ChevronRight, ChevronLeft } from 'lucide-react';
 
 export default function TimelineExperience() {
   const [activeExperience, setActiveExperience] = useState(0);
@@ -29,9 +30,11 @@ export default function TimelineExperience() {
   ];
 
   return (
-    <div className="text-white p-6">
+    <div id="work" className="text-white p-6 ">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-10 text-blue-800">Work Experience</h1>
+        <h1 className="text-center mb-8 mt-6 text-4xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-1xl font-extrabold text-white leading-none ">
+          Work <span className="text-pink font-bold">Experience</span>
+        </h1>
 
         {/* Timeline Navigation */}
         <div className="flex justify-between mb-8 border rounded-lg shadow overflow-hidden">
@@ -39,7 +42,7 @@ export default function TimelineExperience() {
             <button
               key={index}
               className={`flex-1 py-4 px-2 text-center  transition-all ${
-                activeExperience === index ? 'text-white bg-pink text-blue' : 'hover:bg-blue-50'
+                activeExperience === index ? ' bg-pink text-blue' : 'hover:bg-blue-50'
               }`}
               onClick={() => setActiveExperience(index)}>
               <span className="font-medium">{exp.company}</span>

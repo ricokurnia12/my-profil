@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Menu } from 'react-feather';
 import { navlinks } from '@utils/constants';
+import HeaderSmall from './header-small';
+import Button from './buttons';
 
 type Props = {
   href: string;
@@ -40,7 +42,8 @@ const Navbar = (): JSX.Element => {
   const [isScreenScrolled, setisScreenScrolled] = useState(false);
   const addShadowtoNav = () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    window.scrollY >= 100 ? setisScreenScrolled(true) : setisScreenScrolled(false);
+    // window.scrollY >= 100 ? setisScreenScrolled(true) : setisScreenScrolled(false);
+    setisScreenScrolled(true);
   };
 
   useEffect(() => {
@@ -52,20 +55,24 @@ const Navbar = (): JSX.Element => {
 
   return (
     <div
-      className={` mx-auto bg-blue w-full fixed z-30
-      ${isScreenScrolled && 'shadow-2xl'}
-      `}>
-      <nav className="block md:flex justify-between items-center p-2 px-8">
+      className={` mx-auto bg-blue w-full mb-12  fixed z-30
+      ${isScreenScrolled ? 'shadow-2xl' : ''}
+       `}>
+      <nav className="block md:flex justify-between items-center p-2 px-8 ">
         <div className="flex justify-between">
           <div>
-            <Link href="/">
-              {/* <img
-                src={`https://google.com`}
+            <Link className="flex items-center text-white" href="/">
+              <img
+                src="/me.png"
                 alt="logo"
                 className={`${
-                  isScreenScrolled ? 'w-1/5 md:w-3/12' : 'w-16 md:w-2/5'
-                } pl-30 my-2 transition-all transform hover:scale-75 cursor-pointer`}
-              /> */}
+                  isScreenScrolled ? 'w-2 md:w-16' : 'w-16 md:w-18'
+                } pl-30 my-2 transition-all transform hover:scale-75 cursor-pointer pl-8`}
+              />{' '}
+              <div>
+                <HeaderSmall text="Ricos Profile" />
+                {/* {!isScreenScrolled && <Button type="outlined" text="Click to know me" />} */}
+              </div>
             </Link>
           </div>
           <div className="flex md:hidden">

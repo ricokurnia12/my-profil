@@ -60,7 +60,7 @@ export default function Work(): JSX.Element {
               </h1>
 
               <div className="sm:ml-52 xl:ml-96">
-                <Link href="/work">
+                <Link href="#work">
                   <img
                     src="/images/vectors/arrows-right.svg"
                     alt="Next"

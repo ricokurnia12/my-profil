@@ -2,9 +2,9 @@ import Landing from './landing';
 import Skills from './skills';
 import Work from './work';
 import Projects from './projects';
-import Contact from './contact';
 import TimelineExperience from 'components/experience';
 // import RepoDetails from './repo';
+
 // import WordCloud from './wordcloud';
 
 const HomePage = (): JSX.Element => {
@@ -18,7 +18,7 @@ const HomePage = (): JSX.Element => {
           <TimelineExperience />
           {/* <WordCloud /> */}
           <Projects />
-          <Contact />
+          {/* <Contact /> */}
           {/* <RepoDetails /> */}
         </div>
       </div>
