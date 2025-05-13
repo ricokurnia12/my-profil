@@ -1,13 +1,8 @@
-import dynamic from 'next/dynamic';
 import { getPersonalDetails, getProjectDetails } from '@utils/apiService';
 import { PersonalDetailsContext, ProjectDetailsContext } from '@utils/contexts';
 import { PersonalDetails, Project } from '@utils/types';
-import { Footer, Loader, Navbar, SocialBar } from '@shared-components';
+import { Footer, Navbar, SocialBar } from '@shared-components';
 
-const ProjectsPage = dynamic(() => import('../components/projects/index'), {
-  ssr: false,
-  loading: () => <Loader />
-});
 type Props = {
   personalDetails: PersonalDetails;
   projectDetails: Project[];
@@ -19,7 +14,7 @@ const Projects = ({ personalDetails, projectDetails }: Props): JSX.Element => {
       <PersonalDetailsContext.Provider value={personalDetails}>
         <ProjectDetailsContext.Provider value={projectDetails}>
           <Navbar />
-          <ProjectsPage />
+          {/* <ProjectsPage /> */}
           <SocialBar />
           <Footer />
         </ProjectDetailsContext.Provider>
