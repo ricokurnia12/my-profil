@@ -44,56 +44,56 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
   return (
     <div>
       <Head>
-        <title>Harsh Goel | Software Developer</title>
-        <meta name="title" content="Harsh Goel | Software Developer" />
+        <title>Rico kurnia | Web Developer</title>
+        <meta name="title" content="Rico kurnia | Web Developer Developer" />
         <meta
           name="description"
-          content="Harsh is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
+          content="Rico is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
         />
         <meta
           name="keywords"
-          content="Harsh is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
+          content="Rico is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="10 days" />
-        <meta name="author" content="Harsh Goel" />
-        <meta name="copyright" content="All rights reserved,2021. Harsh Goel" />
+        <meta name="author" content="Rico kurnia" />
+        <meta name="copyright" content="All rights reserved,2025. Rico kurnia" />
         <meta httpEquiv="content-language" content="en" />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://harshgoel.me/" />
-        <meta property="og:title" content="Harsh Goel | Software Developer" />
+        {/* <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://Ricokurnia.me/" />
+        <meta property="og:title" content="Rico kurnia | Software Developer" />
         <meta
           property="og:description"
-          content="Harsh is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
+          content="Rico is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
         />
         <meta
           property="og:image"
-          content="https://billboard.srmkzilla.net/api/blog?title=Harsh%20Goel&subtitle=Software%20Developer&fileType=jpeg&theme=dark&fontSize=180px"
-        />
+          content="https://billboard.srmkzilla.net/api/blog?title=Rico%20kurnia&subtitle=Software%20Developer&fileType=jpeg&theme=dark&fontSize=180px"
+        /> */}
 
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://harshgoel.me/" />
-        <meta property="twitter:site" content="@harshgoel05" />
-        <meta property="twitter:title" content="Harsh Goel | Software Developer" />
+        {/* <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://Ricokurnia.me/" />
+        <meta property="twitter:site" content="@Ricokurnia05" />
+        <meta property="twitter:title" content="Rico kurnia | Software Developer" />
         <meta
           property="twitter:description"
-          content="Harsh is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
-        />
+          content="Rico is a full stack developer who crafts beautiful web-apps, chrome extensions and apps."
+        /> */}
         {/* Use Billboard to get an OG Image */}
-        <meta
+        {/* <meta
           property="twitter:image"
-          content="https://billboard.srmkzilla.net/api/blog?title=Harsh%20Goel&subtitle=Software%20Developer&fileType=jpeg&theme=dark&fontSize=180px"
+          content="https://billboard.srmkzilla.net/api/blog?title=Rico%20kurnia&subtitle=Software%20Developer&fileType=jpeg&theme=dark&fontSize=180px"
         />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /> */}
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-2595CLJE11" /> */}
@@ -138,7 +138,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
           <CookieAlert />
         </AnimatePresence>
       )}
-      {/* {disableConsole()} */}
+      {disableConsole()}
     </div>
   );
 }
