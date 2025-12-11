@@ -1,6 +1,7 @@
 const projectData = [
   {
     name: 'GO Karir',
+    url: 'https://career.ganeshaoperation.com/',
     tech: {
       frontend: ['ReactJs', 'NextJs', 'TailwindCss'],
       backend: ['NodeJs', 'NestJs'],
@@ -51,6 +52,7 @@ const projectData = [
   },
   {
     name: 'Teaser GO',
+    url: 'https://ganeshaoperation.com/teasergo/',
     tech: {
       frontend: ['ReactJs', 'TailwindCss'],
       backend: ['PHP', 'Laravel'],
@@ -95,6 +97,7 @@ const projectData = [
   },
   {
     name: 'Official Web Ganesha Operation',
+    url: 'https://dev-web.ganeshaoperation.com',
     tech: {
       frontend: ['NextJs', 'TailwindCss'],
       backend: ['NodeJs', 'ExpressJs'],
@@ -145,6 +148,101 @@ const projectData = [
         <p>
           Built with NextJs and TailwindCSS for the frontend, and powered by NodeJs and ExpressJs on
           the backend, this platform ensures scalability, flexibility, and ease of maintenance.
+        </p>
+      </>
+    )
+  },
+  {
+    name: 'WA Blast Service',
+    tech: {
+      frontend: ['NextJs', 'TailwindCss'],
+      backend: ['NodeJs', 'ExpressJs', 'wwebjs'],
+      server: ['Nginx'],
+      database: ['PostgreSql', 'Redis']
+    },
+    image: [
+      {
+        path: '/project/wablast/dashboard.png',
+        description: 'Dashboard for monitoring WhatsApp sessions'
+      },
+      {
+        path: '/project/wablast/login.png',
+        description: 'QR Code login screen'
+      },
+      {
+        path: '/project/wablast/champaign.png',
+        description: 'Form for sending blast messages to multiple recipients'
+      },
+      {
+        path: '/project/wablast/contact.png',
+        description: 'Real-time message delivery logs'
+      },
+      {
+        path: '/project/wablast/templata-message.png',
+        description: 'Real-time message delivery logs'
+      }
+    ],
+    description: (
+      <>
+        <p>
+          <strong>WA Blast Service</strong> is a WhatsApp messaging platform built using
+          <strong> wwebjs</strong> with a multi-session architecture. Each user can log in via QR
+          Code, and every session operates independently without interfering with others.
+        </p>
+        <p>
+          The backend is powered by NodeJs and Express, with Redis used for persistent session
+          storage. The system supports high-volume message broadcasting, includes a reliable queuing
+          mechanism, and allows sending documents, images, and template messages.
+        </p>
+        <p>
+          This platform is designed for marketing campaigns, payment reminders, automated
+          notifications, and other message distribution needs.
+        </p>
+      </>
+    )
+  },
+  {
+    name: 'WonderPalembang',
+    url: 'http://wonderpalembang.site/',
+    tech: {
+      frontend: ['NextJs', 'TailwindCss'],
+      backend: ['Golang', 'Echo / Fiber'],
+      server: ['Nginx'],
+      database: ['PostgreSql']
+    },
+    image: [
+      {
+        path: '/project/wonderpalembang/home.png',
+        description: 'Landing page showcasing Palembang tourism highlights'
+      },
+      {
+        path: '/project/wonderpalembang/event.png',
+        description: 'Upcoming cultural and city events listing'
+      },
+      {
+        path: '/project/wonderpalembang/detailblog.png',
+        description: 'Directory of popular attractions and destinations'
+      },
+      {
+        path: '/project/wonderpalembang/hotels.png',
+        description: ''
+      }
+    ],
+    description: (
+      <>
+        <p>
+          <strong>WonderPalembang</strong> is a tourism platform designed to promote the beauty,
+          culture, and experiences of Palembang. It features curated destinations, upcoming events,
+          and a cultural guide that helps visitors learn about local traditions.
+        </p>
+        <p>
+          The frontend is built with NextJs and TailwindCSS for fast navigation and a modern UI,
+          while the backend is powered by Golang to ensure high performance and efficient data
+          processing. All data is stored securely in PostgreSQL and served through Nginx.
+        </p>
+        <p>
+          WonderPalembang aims to provide both tourists and locals with a seamless way to explore
+          attractions, discover events, and appreciate Palembang’s cultural richness.
         </p>
       </>
     )

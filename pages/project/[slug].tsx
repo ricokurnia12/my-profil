@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -7,6 +8,7 @@ import { Navbar } from '@shared-components';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import projectData from 'data/project-data';
+import Link from 'next/link';
 
 const Detail = () => {
   const path = useRouter().query.slug;
@@ -27,6 +29,18 @@ const Detail = () => {
           <div className="md:col-span-2">
             <h2 className="text-2xl font-bold mb-6">Project Overview</h2>
             <h2 className="text-2xl font-bold mb-6">{projectActived?.name}</h2>
+            {projectActived?.url && (
+              <div>
+                Click this link to visit project site 👇:
+                <Link
+                  href={projectActived?.url || '#'}
+                  target="_blank"
+                  className="text-blue-300 mb-4 block">
+                  {projectActived?.url}
+                </Link>
+              </div>
+            )}
+
             {/* Main Project Image */}
             {projectActived?.image?.[0] && (
               <div className="mb-8">

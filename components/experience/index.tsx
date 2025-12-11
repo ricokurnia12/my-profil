@@ -1,7 +1,9 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/button-has-type */
 import { useState } from 'react';
-import { Briefcase, Calendar, ChevronRight, ChevronLeft } from 'lucide-react';
+import { Calendar, ChevronRight, ChevronLeft } from 'lucide-react';
 
 export default function TimelineExperience() {
   const [activeExperience, setActiveExperience] = useState(0);
@@ -11,21 +13,46 @@ export default function TimelineExperience() {
       company: 'Universitas Gunadarma',
       period: '2018 - 2020',
       description:
-        'Membantu dalam kegiatan belajar mengajar, termasuk mempersiapkan materi dan memberikan dukungan kepada mahasiswa. Bertanggung jawab dalam pengajaran topik terkait pengembangan web dan teknologi frontend, serta membantu mahasiswa memahami konsep desain responsif dan penggunaan Tailwind CSS dalam proyek praktikum.'
+        '- Mendukung kegiatan belajar mengajar di bidang pengembangan web.\n' +
+        '- Menyiapkan materi praktikum (HTML, CSS, responsive design, Tailwind CSS).\n' +
+        '- Membimbing mahasiswa memahami konsep frontend modern.\n' +
+        '- Memberikan asistensi langsung saat praktikum.\n' +
+        '- Berkontribusi dalam penyusunan materi yang lebih terstruktur.'
     },
     {
       title: 'Admin Finance',
       company: 'Sehat 365',
       period: '2022',
       description:
-        'Mengelola proses administrasi keuangan perusahaan, termasuk pencatatan transaksi, pengelolaan laporan keuangan, dan koordinasi dengan pihak terkait untuk memastikan kelancaran operasional keuangan. Memastikan semua data keuangan akurat dan sesuai dengan prosedur yang berlaku.'
+        '- Mengelola pencatatan transaksi dan laporan keuangan.\n' +
+        '- Melakukan rekonsiliasi data keuangan secara rutin.\n' +
+        '- Berkoordinasi lintas divisi untuk memastikan kelancaran operasional.\n' +
+        '- Menjaga akurasi dan ketelitian seluruh dokumen keuangan.\n' +
+        '- Menerapkan sistem administrasi yang lebih efisien dan rapi.'
     },
     {
       title: 'Fullstack Web Developer',
       company: 'PT. Pendidikan Ganesha Operation',
       period: '2022 - Sekarang',
       description:
-        'Bertanggung jawab dalam pengembangan dan pemeliharaan aplikasi web dari sisi frontend dan backend. Mengintegrasikan berbagai fitur pada aplikasi seperti sistem registrasi, dashboard admin, dan manajemen data. Menjamin performa aplikasi yang optimal dan bekerja sama dengan tim lain untuk menyelesaikan tugas pengembangan perangkat lunak secara efisien.'
+        '- Mengembangkan aplikasi web secara end-to-end (frontend & backend).\n' +
+        '- Membangun fitur seperti registrasi, dashboard admin, dan manajemen data.\n' +
+        '- Integrasi API internal dan eksternal.\n' +
+        '- Optimasi performa aplikasi dan peningkatan kualitas codebase.\n' +
+        '- Berkolaborasi dengan tim desain, produk, dan QA.\n' +
+        '- Kontribusi pada arsitektur sistem agar scalable.'
+    },
+    {
+      title: 'Backend Developer',
+      company: 'Bank Mega Syariah',
+      period: 'Juni 2025 - Sekarang',
+      description:
+        '- Mengembangkan dan memelihara layanan backend untuk digital banking.\n' +
+        '- Implementasi fitur inti backend dengan standar keamanan tinggi.\n' +
+        '- Integrasi sistem internal agar layanan stabil dan interoperable.\n' +
+        '- Optimasi performa layanan agar scalable dan reliable.\n' +
+        '- Monitoring, debugging, dan peningkatan kualitas layanan.\n' +
+        '- Kolaborasi dengan divisi security, QA, dan product.'
     }
   ];
 
@@ -64,21 +91,19 @@ export default function TimelineExperience() {
                 {/* Timeline dot */}
                 <div className="relative">
                   <div className="h-10 w-10 bg-blue-600 rounded-full flex items-center justify-center z-10 relative shadow-lg">
-                    <Briefcase size={20} className="text-white" />
+                    {/* <Briefcase size={20} className="text-white" /> */}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="ml-6  bg-white p-6 rounded-lg shadow-lg flex-grow">
                   <h2 className="text-2xl font-bold text-gray-800">{experience.title}</h2>
-                  <h3 className="text-xl text-blue-600 font-semibold mb-2">{experience.company}</h3>
-
                   <div className="flex items-center text-gray-600 mb-4">
                     <Calendar size={16} className="mr-2" />
                     <span>{experience.period}</span>
                   </div>
 
-                  <p className="mb-4 text-gray-700">{experience.description}</p>
+                  <p className="text-gray-700 whitespace-pre-line">{experience.description}</p>
 
                   {/* <div className="mt-4">
                     <h4 className="font-semibold text-gray-700 mb-2 flex items-center">
